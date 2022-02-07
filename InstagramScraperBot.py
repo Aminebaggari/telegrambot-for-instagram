@@ -62,7 +62,7 @@ def start(update, context):
     msg = (
         "Hello "
         + name
-        + ".\nNice to meet you !\nI'm telegram bot written in Python by @vinayak_09\nFor more info type /help"
+        + ".\nNice to meet you !\nI'm telegram bot written in Python by @mariem.embra\nFor more info type /help"
     )
     update.message.reply_text(msg)
 
@@ -80,7 +80,7 @@ def instaDp(update, context):
             action=telegram.ChatAction.UPLOAD_PHOTO,
         )
         fullLink = "https://www.instagram.com/" + textInstaProfileId + "/?__a=1"
-        update.message.reply_text("Fetching Details.....")
+        update.message.reply_text("Searching.....")
         context.bot.send_chat_action(
             chat_id=update.effective_message.chat_id,
             action=telegram.ChatAction.UPLOAD_PHOTO,
